@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculadora-Ninja</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Calculadora Ninja</h1>
+      <label for="titulo">Selecione qual calculo deseja realizar</label><br>
+      <select name="op" id="op">
+        <option value="zero">Selecione . . .</option>
+        <option value="opcao1">Calcule a absorção</option>
+        <option value="opcao2">Calcule o Critico</option>
+      </select>
+
+      <div id="calc_abs" style="display: none">
+        <h2>Vamos calcular o Absorção</h2>
+
+        <form id="formabs">
+          <input
+            id="atakinimigo"
+            type="number"
+            placeholder="Digite o valor do ataque do inimigo"
+          /> <br>
+
+          <input
+            id="minhadef"
+            type="number"
+            placeholder="Digite o valor de sua defesa"
+          /> <br>
+
+          <input
+            id="pabs"
+            type="number"
+            placeholder="digite o valor da sua absorção"
+          /> <br>
+
+          <input type="submit" id="sendabs" />
+        </form>
+      </div>
+
+      <div id="calc_crt" style="display: none">
+        <h2>Vamos calcular o Critico</h2>
+
+        <form id="formcrt">
+          <input
+            id="meuatak"
+            type="number"
+            placeholder="Digite o calor do seu ataque"
+          />
+
+          <input
+            id="inimigodef"
+            type="number"
+            placeholder="Digite o valor da defesa dp inimigo"
+          />
+          <input id="pcrt" type="number" placeholder="Digite o valor do seu incremento critico" />
+
+          <input type="submit" id="sendcrt" />
+        </form>
+      </div>
+      <p id="res"></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
