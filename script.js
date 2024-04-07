@@ -37,7 +37,7 @@ opcoes.addEventListener('change', function(){
             var resul = inimigodef * pcrt / 100
             var tota = resu * pcrt / 100
             var final = resul + resu + tota
-            res.innerHTML = 'Nesta simulação seu ataque será '+ final + 'de dano'
+            res.innerHTML = 'Nesta simulação seu ataque será '+ final + ' de dano'
             document.getElementById('meuatak').value = ''
             document.getElementById('inimigo').value = ''
             document.getElementById('pcrt').value = ''
